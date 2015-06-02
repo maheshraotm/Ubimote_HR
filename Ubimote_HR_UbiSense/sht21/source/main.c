@@ -4,7 +4,7 @@
  Author      : Rangineni Balasubramanyam
  Version     :
  Copyright   : CDAC KP Bangalore
- Description : Hello World in C
+ Description : Example program for sht21 for Ubimote_HR
  ============================================================================
  */
 #include <stdio.h>
