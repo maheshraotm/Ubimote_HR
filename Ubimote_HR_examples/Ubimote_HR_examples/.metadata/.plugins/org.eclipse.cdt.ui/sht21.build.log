@@ -1,0 +1,11 @@
+12:59:31 **** Incremental Build of configuration Debug for project sht21 ****
+make all 
+Invoking: Cross ARM GNU Print Size
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-size --format=berkeley "sht21.elf"
+   text	   data	    bss	    dec	    hex	filename
+   5864	      0	    516	   6380	   18ec	sht21.elf
+Finished building: sht21.siz
+ 
+
+12:59:33 Build Finished (took 2s.298ms)
+

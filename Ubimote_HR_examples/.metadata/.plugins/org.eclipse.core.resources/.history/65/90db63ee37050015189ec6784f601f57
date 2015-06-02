@@ -1,0 +1,53 @@
+/*
+
+   GPIO project for Ubimote_HR
+   © CDAC Knowledge part Bangalore
+
+   Author: rangineni balasubramanyam <balasubramanyam@cdac.in>
+
+ */
+
+
+#include <stdint.h>
+#include <gpio.h>
+#include <ioc.h>
+
+#include "basic_rf.h"
+#include "hal_rf.h"
+#include "hal_timer_32k.h"
+#include "hal_int.h"
+#include "hw_cctest.h"
+
+#define TX_ADDR 0xABCD
+#define CHANNEL 0x11
+perCfg_t perConfig = {0};
+static basicRfCfg_t basicRfConfig;
+//#define GPIO_C_DIR                0x400DB400
+//#define GPIO_C_DATA               0x400DB000
+//#define HWREG(x) (*((volatile uint32_t *)(x)))
+static void appTimerIsr(void);
+
+int main(void)
+{
+
+	//halIntOn();
+	basicRfConfig.myAddr = TX_ADDR;
+	    basicRfConfig.channel = CHANNEL;
+	    if(basicRfInit(&basicRfConfig) == FAILED)
+	    {
+	    while(1);
+	    }
+
+	    basicRfReceiveOff();
+	    halRfSetTxPower(0);
+	   // appTimerConfig(20);
+	    halTimer32kInit(32768/20);
+	    halTimer32kIntConnect(&appTimerIsr);    // Connect ISR
+	    halTimer32kIntEnable();                 // Enable interrupts
+
+}
+static void appTimerIsr(void)
+{
+	;
+}
+

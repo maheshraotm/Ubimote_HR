@@ -1,0 +1,20 @@
+/*
+ * ubimote_rf.h
+ *
+ *  Created on: 28-May-2015
+ *      Author: cdac
+ */
+
+#ifndef SOURCE_UBIMOTE_RF_H_
+#define SOURCE_UBIMOTE_RF_H_
+
+
+static void halRfIsr(void);
+
+
+#ifndef SUCCESS
+#define SUCCESS 0
+#else
+#warning "Macro SUCCESS already defined"
+#endif
+#endif /* SOURCE_UBIMOTE_RF_H_ */

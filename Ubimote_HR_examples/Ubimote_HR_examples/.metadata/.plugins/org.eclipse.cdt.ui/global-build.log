@@ -1,0 +1,157 @@
+11:09:19 **** Incremental Build of configuration Debug for project tsl2671 ****
+make all 
+Building file: ../source/main.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"source/main.d" -MT"source/main.o" -c -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building file: ../source/tsl2671.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"source/tsl2671.d" -MT"source/tsl2671.o" -c -o "source/tsl2671.o" "../source/tsl2671.c"
+Finished building: ../source/tsl2671.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/adc.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/adc.d" -MT"driverlib/source/adc.o" -c -o "driverlib/source/adc.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/adc.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/adc.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/aes.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/aes.d" -MT"driverlib/source/aes.o" -c -o "driverlib/source/aes.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/aes.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/aes.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ccm.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/ccm.d" -MT"driverlib/source/ccm.o" -c -o "driverlib/source/ccm.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ccm.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ccm.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/cpu.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/cpu.d" -MT"driverlib/source/cpu.o" -c -o "driverlib/source/cpu.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/cpu.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/cpu.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/debug.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/debug.d" -MT"driverlib/source/debug.o" -c -o "driverlib/source/debug.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/debug.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/debug.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/flash.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/flash.d" -MT"driverlib/source/flash.o" -c -o "driverlib/source/flash.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/flash.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/flash.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gpio.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/gpio.d" -MT"driverlib/source/gpio.o" -c -o "driverlib/source/gpio.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gpio.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gpio.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gptimer.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/gptimer.d" -MT"driverlib/source/gptimer.o" -c -o "driverlib/source/gptimer.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gptimer.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/gptimer.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/i2c.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/i2c.d" -MT"driverlib/source/i2c.o" -c -o "driverlib/source/i2c.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/i2c.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/i2c.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/interrupt.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/interrupt.d" -MT"driverlib/source/interrupt.o" -c -o "driverlib/source/interrupt.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/interrupt.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/interrupt.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ioc.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/ioc.d" -MT"driverlib/source/ioc.o" -c -o "driverlib/source/ioc.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ioc.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ioc.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/pka.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/pka.d" -MT"driverlib/source/pka.o" -c -o "driverlib/source/pka.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/pka.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/pka.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sha256.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/sha256.d" -MT"driverlib/source/sha256.o" -c -o "driverlib/source/sha256.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sha256.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sha256.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sleepmode.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/sleepmode.d" -MT"driverlib/source/sleepmode.o" -c -o "driverlib/source/sleepmode.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sleepmode.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sleepmode.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ssi.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/ssi.d" -MT"driverlib/source/ssi.o" -c -o "driverlib/source/ssi.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ssi.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/ssi.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/startup_gcc.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/startup_gcc.d" -MT"driverlib/source/startup_gcc.o" -c -o "driverlib/source/startup_gcc.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/startup_gcc.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/startup_gcc.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sys_ctrl.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/sys_ctrl.d" -MT"driverlib/source/sys_ctrl.o" -c -o "driverlib/source/sys_ctrl.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sys_ctrl.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/sys_ctrl.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/systick.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/systick.d" -MT"driverlib/source/systick.o" -c -o "driverlib/source/systick.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/systick.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/systick.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uart.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/uart.d" -MT"driverlib/source/uart.o" -c -o "driverlib/source/uart.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uart.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uart.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uartstdio.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/uartstdio.d" -MT"driverlib/source/uartstdio.o" -c -o "driverlib/source/uartstdio.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uartstdio.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/uartstdio.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/udma.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/udma.d" -MT"driverlib/source/udma.o" -c -o "driverlib/source/udma.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/udma.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/udma.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/watchdog.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"driverlib/source/watchdog.d" -MT"driverlib/source/watchdog.o" -c -o "driverlib/source/watchdog.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/watchdog.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source/watchdog.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_i2c.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"Ubimote_bsp/Ubimote_i2c.d" -MT"Ubimote_bsp/Ubimote_i2c.o" -c -o "Ubimote_bsp/Ubimote_i2c.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_i2c.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_i2c.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_uart.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"Ubimote_bsp/Ubimote_uart.d" -MT"Ubimote_bsp/Ubimote_uart.o" -c -o "Ubimote_bsp/Ubimote_uart.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_uart.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/Ubimote_uart.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/board.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"Ubimote_bsp/board.d" -MT"Ubimote_bsp/board.o" -c -o "Ubimote_bsp/board.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/board.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/board.c
+ 
+Building file: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/delay.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source -MMD -MP -MF"Ubimote_bsp/delay.d" -MT"Ubimote_bsp/delay.o" -c -o "Ubimote_bsp/delay.o" "/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/delay.c"
+Finished building: /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp/delay.c
+ 
+Building target: tsl2671.elf
+Invoking: Cross ARM C Linker
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"tsl2671.map" --specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group -o "tsl2671.elf"  ./source/main.o ./source/tsl2671.o  ./driverlib/source/adc.o ./driverlib/source/aes.o ./driverlib/source/ccm.o ./driverlib/source/cpu.o ./driverlib/source/debug.o ./driverlib/source/flash.o ./driverlib/source/gpio.o ./driverlib/source/gptimer.o ./driverlib/source/i2c.o ./driverlib/source/interrupt.o ./driverlib/source/ioc.o ./driverlib/source/pka.o ./driverlib/source/sha256.o ./driverlib/source/sleepmode.o ./driverlib/source/ssi.o ./driverlib/source/startup_gcc.o ./driverlib/source/sys_ctrl.o ./driverlib/source/systick.o ./driverlib/source/uart.o ./driverlib/source/uartstdio.o ./driverlib/source/udma.o ./driverlib/source/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o   
+Finished building target: tsl2671.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-objcopy -O ihex "tsl2671.elf"  "tsl2671.hex"
+Finished building: tsl2671.hex
+ 
+Invoking: Cross ARM GNU Print Size
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-size --format=berkeley "tsl2671.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6096	      0	    516	   6612	   19d4	tsl2671.elf
+Finished building: tsl2671.siz
+ 

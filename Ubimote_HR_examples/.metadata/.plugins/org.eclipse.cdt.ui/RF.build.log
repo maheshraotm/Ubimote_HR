@@ -1,0 +1,11 @@
+18:49:59 **** Incremental Build of configuration Debug for project RF ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "RF.elf"
+   text	   data	    bss	    dec	    hex	filename
+   4448	   1041	    900	   6389	   18f5	RF.elf
+Finished building: RF.siz
+ 
+
+18:49:59 Build Finished (took 106ms)
+

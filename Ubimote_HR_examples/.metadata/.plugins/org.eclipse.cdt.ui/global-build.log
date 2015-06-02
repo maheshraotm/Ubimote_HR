@@ -1,0 +1,8 @@
+19:37:23 **** Incremental Build of configuration Debug for project ADC_tempsensor ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "ADC_tempsensor.elf"
+   text	   data	    bss	    dec	    hex	filename
+   7140	      0	    516	   7656	   1de8	ADC_tempsensor.elf
+Finished building: ADC_tempsensor.siz
+ 

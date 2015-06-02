@@ -1,0 +1,25 @@
+18:38:16 **** Incremental Build of configuration Debug for project sht21 ****
+make all 
+Building file: ../source/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/sht21/source -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -std=gnu11 -MMD -MP -MF"source/main.d" -MT"source/main.o" -c -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building target: sht21.elf
+Invoking: Cross ARM C Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"sht21.map" --specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group -o "sht21.elf"  ./source/main.o ./source/sht21.o  ./driverlib/adc.o ./driverlib/aes.o ./driverlib/ccm.o ./driverlib/cpu.o ./driverlib/debug.o ./driverlib/flash.o ./driverlib/gpio.o ./driverlib/gptimer.o ./driverlib/i2c.o ./driverlib/interrupt.o ./driverlib/ioc.o ./driverlib/pka.o ./driverlib/sha256.o ./driverlib/sleepmode.o ./driverlib/ssi.o ./driverlib/startup_gcc.o ./driverlib/sys_ctrl.o ./driverlib/systick.o ./driverlib/uart.o ./driverlib/uartstdio.o ./driverlib/udma.o ./driverlib/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o   
+Finished building target: sht21.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+arm-none-eabi-objcopy -O ihex "sht21.elf"  "sht21.hex"
+Finished building: sht21.hex
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "sht21.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6156	      0	    516	   6672	   1a10	sht21.elf
+Finished building: sht21.siz
+ 
+
+18:38:17 Build Finished (took 213ms)
+

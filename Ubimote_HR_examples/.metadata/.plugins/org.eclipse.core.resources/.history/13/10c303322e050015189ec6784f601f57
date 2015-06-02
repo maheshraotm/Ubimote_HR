@@ -1,0 +1,159 @@
+#include "ubimote_rf.h"
+#include "hw_types.h"               // Using HWREG() macro
+//#include "hal_defs.h"
+//#include "hal_int.h"
+//#include "hal_rf.h"
+#include <ioc.h>
+#include <stdint.h>
+#include "hw_memmap.h"              // Peripheral base definitions
+#include "hw_flash_ctrl.h"          // DIECFGx register definitions
+#include "hw_ints.h"                // Interrupt definitions
+#include "hw_ana_regs.h"            // Register definitions
+#include "hw_rfcore_ffsm.h"         // Register definitions
+#include "hw_rfcore_sfr.h"          // Register definitions
+#include "hw_rfcore_xreg.h"         // Register definitions
+#include "hw_sys_ctrl.h"            // Register definitions
+#include "hw_gpio.h"                // Register definitions
+#include "hw_ioc.h"                 // Register definitions
+#include "hw_cctest.h"              // Register definitions
+
+
+/******************************************************************************
+* CONSTANTS AND DEFINES
+*/
+// Chip revision
+#define REV_A
+#define CHIPREVISION
+
+// CC2538 RSSI Offset
+#define RSSI_OFFSET                     73
+// CC2538/CC2591 RSSI Offset
+#define RSSI_OFFSET_LNA_CC2591_HIGHGAIN 79
+#define RSSI_OFFSET_LNA_CC2591_LOWGAIN  69
+// CC2538/CC2592 RSSI Offset
+#define RSSI_OFFSET_LNA_CC2592_HIGHGAIN 85
+#define RSSI_OFFSET_LNA_CC2592_LOWGAIN  81
+
+// Various radio settings
+#define AUTO_ACK                    RFCORE_XREG_FRMCTRL0_AUTOACK
+#define AUTO_CRC                    RFCORE_XREG_FRMCTRL0_AUTOCRC
+
+// RF interrupt flags
+#define IRQ_TXDONE                  0x00000002
+#define IRQ_RXPKTDONE               0x00000040
+
+// Selected strobes
+#define RFST                        RFCORE_SFR_RFST
+#define ISRXON()                    st(HWREG(RFST) = 0x000000E3;)
+#define ISTXON()                    st(HWREG(RFST) = 0x000000E9;)
+#define ISTXONCCA()                 st(HWREG(RFST) = 0x000000EA;)
+#define ISRFOFF()                   st(HWREG(RFST) = 0x000000EF;)
+#define ISFLUSHRX()                 st(HWREG(RFST) = 0x000000ED;)
+#define ISFLUSHTX()                 st(HWREG(RFST) = 0x000000EE;)
+
+#define HAL_PA_LNA_INIT()
+#define HAL_PA_LNA_RX_LGM()         st(HWREG(GPIO_D_BASE + (GPIO_O_DATA +     \
+                                       (0x04 << 2))) = 0;)
+#define HAL_PA_LNA_RX_HGM()         st(HWREG(GPIO_D_BASE + (GPIO_O_DATA +     \
+                                       (0x04 << 2))) = 0x04;)
+
+// TX power function arguments
+#define HAL_RF_TXPOWER_22_DBM       22
+#define HAL_RF_TXPOWER_20_DBM       20
+#define HAL_RF_TXPOWER_16_DBM       16
+#define HAL_RF_TXPOWER_13_DBM       13
+#define HAL_RF_TXPOWER_7_DBM        7
+#define HAL_RF_TXPOWER_4_DBM        4
+#define HAL_RF_TXPOWER_3_DBM        3
+#define HAL_RF_TXPOWER_0_DBM        0
+#define HAL_RF_TXPOWER_MIN_3_DBM    (0x80|3)
+#define HAL_RF_TXPOWER_MIN_9_DBM    (0x80|9)
+#define HAL_RF_TXPOWER_MIN_15_DBM   (0x80|15)
+
+// TXPOWER values
+#define CC2538_TXPOWER_7_DBM            0xFF
+#define CC2538_TXPOWER_3_DBM            0xD5
+#define CC2538_TXPOWER_0_DBM            0xB6
+#define CC2538_TXPOWER_MIN_3_DBM        0xA1
+#define CC2538_TXPOWER_MIN_9_DBM        0x72
+#define CC2538_TXPOWER_MIN_15_DBM       0x42
+// For CC2538/CC2591 combo
+#define CC2538_CC2591_TXPOWER_20_DBM    0xE5
+// For CC2538/CC2592 combo
+#define CC2538_CC2592_TXPOWER_22_DBM    0xFF
+#define CC2538_CC2592_TXPOWER_20_DBM    0xC5
+#define CC2538_CC2592_TXPOWER_16_DBM    0x91
+#define CC2538_CC2592_TXPOWER_13_DBM    0x72
+#define CC2538_CC2592_TXPOWER_7_DBM     0x42
+#define CC2538_CC2592_TXPOWER_4_DBM     0x24
+#define CC2538_CC2592_TXPOWER_0_DBM     0x00
+
+
+static uint8_t rssiOffset = RSSI_OFFSET_LNA_CC2592_HIGHGAIN ;
+
+
+
+unsigned char halRfInit(void)
+{
+	 // Enable RF core clocks in active mode (not necessary on CC2538 PG1.0)
+	    HWREG(SYS_CTRL_RCGCRFC) = 1;
+
+	    // Enable auto ack and auto crc
+	    HWREG(RFCORE_XREG_FRMCTRL0) = (HWREG(RFCORE_XREG_FRMCTRL0) | (AUTO_ACK |  \
+	                                  AUTO_CRC));
+
+	    // Recommended RX settings
+	    HWREG(RFCORE_XREG_FRMFILT0) = 0x0D; // Enable frame filtering = 0x0D,
+	                                        // disable = 0x0C
+	    HWREG(RFCORE_XREG_AGCCTRL1) = 0x15;
+	    HWREG(RFCORE_XREG_FSCTRL)   = 0x5A;
+
+	    // Recommended TX settings (only those not already set for RX)
+	    HWREG(RFCORE_XREG_TXFILTCFG)= 0x09;
+	    HWREG(ANA_REGS_O_IVCTRL)    = 0x0B;
+	    HWREG(RFCORE_XREG_FRMCTRL1) = 0x00; // STXON does not affect RXENABLE[6]
+	    HWREG(RFCORE_XREG_MDMTEST1) = 0x08;
+	    HWREG(RFCORE_XREG_FSCAL1)   = 0x01;
+
+
+	    // Enable random generator
+	    // Not implemented
+
+	          // Configure PA/LNA
+	        halRfPaLnaInit();
+
+
+	    // Set RF interrupt priority to maximum
+	    IntPrioritySet(INT_RFCORERTX, 0);
+
+	    // Register halRfIsr() as RX interrupt function
+	    IntRegister(INT_RFCORERTX, &halRfIsr);
+
+	    // Enable RX interrupt
+	    halRfEnableRxInterrupt();
+
+	    return SUCCESS;
+}
+
+static void halRfIsr(void)
+{
+    unsigned short s;
+    HAL_INT_LOCK(s);
+
+    if(HWREG(RFCORE_SFR_RFIRQF0) & IRQ_RXPKTDONE)
+    {
+        if(pfISR)
+        {
+            // Execute the custom ISR
+            (*pfISR)();
+        }
+
+        // Clear general RF interrupt flag
+        IntPendClear(INT_RFCORERTX);
+
+        // Clear RXPKTDONE interrupt
+        HWREG(RFCORE_SFR_RFIRQF0) = HWREG(RFCORE_SFR_RFIRQF0) & ~IRQ_RXPKTDONE;
+    }
+
+    HAL_INT_UNLOCK(s);
+}

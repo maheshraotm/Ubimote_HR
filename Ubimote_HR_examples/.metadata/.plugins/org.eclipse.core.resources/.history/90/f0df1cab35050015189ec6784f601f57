@@ -1,0 +1,33 @@
+/*
+
+   GPIO project for Ubimote_HR
+   © CDAC Knowledge part Bangalore
+
+   Author: rangineni balasubramanyam <balasubramanyam@cdac.in>
+
+ */
+
+
+#include <stdint.h>
+#include <gpio.h>
+#include <ioc.h>
+
+#include "basic_rf.h"
+#include "hal_rf.h"
+#include "hal_timer_32k.h"
+#include "hal_int.h"
+
+#include "hw_cctest.h"
+
+
+//#define GPIO_C_DIR                0x400DB400
+//#define GPIO_C_DATA               0x400DB000
+//#define HWREG(x) (*((volatile uint32_t *)(x)))
+
+int main(void)
+{
+
+	halIntOn();
+
+
+}

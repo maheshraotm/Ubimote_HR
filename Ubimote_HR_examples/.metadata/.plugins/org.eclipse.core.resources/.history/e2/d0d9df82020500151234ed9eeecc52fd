@@ -1,0 +1,207 @@
+
+
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include "hw_memmap.h"
+#include "gpio.h"
+#include "hw_ioc.h"
+#include "ioc.h"
+#include "interrupt.h"
+#include "adc.h"
+#include "sys_ctrl.h"
+#include "hw_sys_ctrl.h"
+#include "systick.h"
+#include "uartstdio.h"
+#include "uart.h"
+#include "hw_cctest.h"
+#include "hw_rfcore_xreg.h"
+#include "Ubimote_HR_bsp.h"
+//
+//*****************************************************************************
+//
+//! \addtogroup adc_Ubimotes_list
+//! <h1>ADC Temperature Sensor (adc_tempsens)</h1>
+//!
+//! This Ubimote shows how to configure the ADC for using the internal
+//! temperature sensor. In this Ubimote no calibration has been performed, but
+//! using typical values from data sheet.
+//! In a real application calibration is needed to get accurate readings.
+//!
+//! This example uses the following peripherals and I/O signals.  You must
+//! review these and change as needed for your own board:
+//! - NONE
+//!
+//! The following UART signals are configured only for displaying console
+//! messages for this example.  These are not required for operation of
+//! ADC and temperature sensor.
+//! - UART0 peripheral
+//! - GPIO Port A peripheral (for UART0 pins)
+//! - UART0RX - PA0
+//! - UART0TX - PA1
+//!
+//! This example uses the following interrupt handlers. To use this example
+//! in your own application you may have to add these interrupt handlers to your
+//! vector table.
+//! - None
+//!
+//*****************************************************************************
+
+//*****************************************************************************
+//
+// Constants needed for conversion of ADC readout to a temperature value.
+//
+//*****************************************************************************
+#define CONST 0.58134 //(VREF / 2047) = (1190 / 2047), VREF from Datasheet
+#define OFFSET_DATASHEET_25C 827 // 1422*CONST, from Datasheet
+#define TEMP_COEFF (CONST * 4.2) // From Datasheet
+#define OFFSET_0C (OFFSET_DATASHEET_25C - (25 * TEMP_COEFF))
+
+
+/*
+void Uart_Put_String(unsigned char data[])
+{
+	unsigned char length = 0;
+	for(length = 0; data[length] != '\0'; length++ )
+		UARTCharPut(UART0_BASE, data[length]);
+}
+*/
+//*****************************************************************************
+//
+// This function sets up UART0 to be used for a console to display information
+// as the example is running.
+//
+//*****************************************************************************
+void
+InitConsole(void)
+{
+    //
+    // Map UART signals to the correct GPIO pins and configure them as
+    // hardware controlled.
+    //
+    IOCPinConfigPeriphOutput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_TXD,
+                             IOC_MUX_OUT_SEL_UART0_TXD);
+    GPIOPinTypeUARTOutput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_TXD);
+
+    IOCPinConfigPeriphInput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_RXD,
+                            IOC_UARTRXD_UART0);
+    GPIOPinTypeUARTInput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_RXD);
+
+    //
+    // Initialize the UART (UART0) for console I/O.
+    //
+    UARTStdioInit(0);
+}
+
+//*****************************************************************************
+//
+// Main function. Sets up the ADC to use the temperature sensor as input. Note
+// that you must enable to RF Core in order to use the ADC.
+// The function runs a while forever loop converting the readout from ADC
+// to temperature values and print it on the console.
+//
+//*****************************************************************************
+int
+main(void)
+{
+    uint16_t ui16Dummy;
+    double dOutputVoltage;
+    char pcTemp[20];
+    int i = 0;
+    //
+    // Set the clocking to run directly from the external crystal/oscillator.
+    // (no ext 32k osc, no internal osc)
+    //
+    SysCtrlClockSet(false, false, SYS_CTRL_SYSDIV_32MHZ);
+
+    //
+    // Set IO clock to the same as system clock
+    //
+    SysCtrlIOClockSet(SYS_CTRL_SYSDIV_32MHZ);
+
+    //
+    // Enable RF Core (needed to enable temp sensor)
+    //
+    SysCtrlPeripheralEnable(SYS_CTRL_PERIPH_RFC);
+
+    //
+    // Set up the serial console to use for displaying messages.  This is
+    // just for this Ubimote program and is not needed for Systick operation.
+    //
+    InitConsole();
+
+    //
+    // Display the setup on the console.
+    //
+    UARTprintf("ADC temp sens \n");
+    //Uart_Put_String("ADC temp sens \n");
+
+    //
+    // Connect temp sensor to ADC
+    //
+    HWREG(CCTEST_TR0) |= CCTEST_TR0_ADCTM;
+
+    //
+    // Enable the temperature sensor
+    //
+    HWREG(RFCORE_XREG_ATEST) = 0x01;
+
+    //
+    // Configure ADC, Internal reference, 512 decimation rate (12bit)
+    //
+    SOCADCSingleConfigure(SOCADC_12_BIT, SOCADC_REF_INTERNAL);
+
+    //
+    // Loop forever.
+    //
+    while(1)
+    {
+        //
+        // Trigger single conversion on internal temp sensor
+        //
+        SOCADCSingleStart(SOCADC_TEMP_SENS);
+
+        //
+        // Wait until conversion is completed
+        //
+        while(!SOCADCEndOfCOnversionGet())
+        {
+        }
+
+        //
+        // Get data and shift down based on decimation rate
+        //
+        ui16Dummy = SOCADCDataGet() >> SOCADC_12_BIT_RSHIFT;
+
+        //
+        // Convert to temperature
+        //
+        dOutputVoltage = ui16Dummy * CONST;
+        dOutputVoltage = ((dOutputVoltage - OFFSET_0C) / TEMP_COEFF);
+
+        //
+        // Convert float to string
+        //
+        sprintf(pcTemp, "%.1f", dOutputVoltage);
+
+        //------------------use someother technique instead of sprintf -------------------//
+
+        //
+        // Print the result on UART
+        //
+        UARTprintf("ADC raw readout: %d \n", ui16Dummy);
+        UARTprintf("Temperature: %s", pcTemp);
+        UARTprintf(" C \n");
+      //  Uart_Put_String("ADC raw readout: ");
+       // UARTCharPut(UART0_BASE, cThisChar);
+       // Uart_Put_String("CDAC Ubimote HR \n");
+       // Uart_Put_String("CDAC Ubimote HR \n");
+
+        //
+        // Simple delay
+        //
+        for(i=0;i<1000000;i++)
+        {
+        }
+    }
+}

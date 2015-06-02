@@ -1,0 +1,16 @@
+18:41:35 **** Incremental Build of configuration Debug for project bmp180 ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "bmp180.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8364	      0	    572	   8936	   22e8	bmp180.elf
+Finished building: bmp180.siz
+ 
+18:42:54 **** Incremental Build of configuration Debug for project bmp180 ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "bmp180.elf"
+   text	   data	    bss	    dec	    hex	filename
+   8364	      0	    572	   8936	   22e8	bmp180.elf
+Finished building: bmp180.siz
+ 

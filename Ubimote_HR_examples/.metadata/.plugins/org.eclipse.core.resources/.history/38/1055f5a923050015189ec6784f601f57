@@ -1,0 +1,46 @@
+#include "ubimote_rf.h"
+
+
+unsigned char halRfInit(void)
+{
+	 // Enable RF core clocks in active mode (not necessary on CC2538 PG1.0)
+	    HWREG(SYS_CTRL_RCGCRFC) = 1;
+
+	    // Enable auto ack and auto crc
+	    HWREG(RFCORE_XREG_FRMCTRL0) = (HWREG(RFCORE_XREG_FRMCTRL0) | (AUTO_ACK |  \
+	                                  AUTO_CRC));
+
+	    // Recommended RX settings
+	    HWREG(RFCORE_XREG_FRMFILT0) = 0x0D; // Enable frame filtering = 0x0D,
+	                                        // disable = 0x0C
+	    HWREG(RFCORE_XREG_AGCCTRL1) = 0x15;
+	    HWREG(RFCORE_XREG_FSCTRL)   = 0x5A;
+
+	    // Recommended TX settings (only those not already set for RX)
+	    HWREG(RFCORE_XREG_TXFILTCFG)= 0x09;
+	    HWREG(ANA_REGS_O_IVCTRL)    = 0x0B;
+	    HWREG(RFCORE_XREG_FRMCTRL1) = 0x00; // STXON does not affect RXENABLE[6]
+	    HWREG(RFCORE_XREG_MDMTEST1) = 0x08;
+	    HWREG(RFCORE_XREG_FSCAL1)   = 0x01;
+
+
+	    // Enable random generator
+	    // Not implemented
+
+	    if(halRfEmModule != HAL_RF_CC2538EM)
+	    {
+	        // Configure PA/LNA
+	        halRfPaLnaInit();
+	    }
+
+	    // Set RF interrupt priority to maximum
+	    IntPrioritySet(INT_RFCORERTX, 0);
+
+	    // Register halRfIsr() as RX interrupt function
+	    IntRegister(INT_RFCORERTX, &halRfIsr);
+
+	    // Enable RX interrupt
+	    halRfEnableRxInterrupt();
+
+	    return SUCCESS;
+}

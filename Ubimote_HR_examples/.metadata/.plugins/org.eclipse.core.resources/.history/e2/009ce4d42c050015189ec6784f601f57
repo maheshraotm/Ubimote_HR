@@ -1,0 +1,32 @@
+/*
+
+   GPIO project for Ubimote_HR
+   © CDAC Knowledge part Bangalore
+
+   Author: rangineni balasubramanyam <balasubramanyam@cdac.in>
+
+ */
+
+
+#include <stdint.h>
+#include "Ubimote_HR_bsp.h"
+#include <gpio.h>
+#include <ioc.h>
+
+static basicRfCfg_t basicRfConfig;
+//#define GPIO_C_DIR                0x400DB400
+//#define GPIO_C_DATA               0x400DB000
+//#define HWREG(x) (*((volatile uint32_t *)(x)))
+
+int main(void)
+{
+
+	if(basicRfInit(&basicRfConfig) == FAILED)
+	{
+		while(1);
+	}
+
+
+
+
+}

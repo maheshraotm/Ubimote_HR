@@ -1,0 +1,32 @@
+!SESSION 2015-05-01 11:00:26.714 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-01 11:47:14.222
+!MESSAGE Indexed 'tsl2671' (28 sources, 88 headers) in 3.30 sec: 3,155 declarations; 9,706 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-01 11:47:15.523
+!MESSAGE Indexed 'tsl2561' (28 sources, 89 headers) in 1.29 sec: 3,315 declarations; 9,824 references; 0 unresolved inclusions; 2 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-01 11:47:16.577
+!MESSAGE Indexed 'bmp180' (29 sources, 88 headers) in 1.04 sec: 3,428 declarations; 10,151 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-05-01 11:47:17.407
+!MESSAGE Indexed 'sht21' (28 sources, 88 headers) in 0.82 sec: 3,295 declarations; 9,759 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.02%)
+
+!ENTRY ilg.gnuarmeclipse.packs.data 4 1 2015-05-01 11:49:00.592
+!MESSAGE File .repos.xml does not exist, using defaults.
+!SESSION 2015-05-05 11:08:44.375 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-05-05 11:08:48.291
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

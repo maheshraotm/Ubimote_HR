@@ -1,0 +1,30 @@
+12:58:04 **** Incremental Build of configuration Debug for project tsl2561 ****
+make all 
+Building file: ../source/main.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2561/source -std=gnu11 -MMD -MP -MF"source/main.d" -MT"source/main.o" -c -o "source/main.o" "../source/main.c"
+Finished building: ../source/main.c
+ 
+Building file: ../source/tsl2561.c
+Invoking: Cross ARM C Compiler
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -I/home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/tsl2561/source -std=gnu11 -MMD -MP -MF"source/tsl2561.d" -MT"source/tsl2561.o" -c -o "source/tsl2561.o" "../source/tsl2561.c"
+Finished building: ../source/tsl2561.c
+ 
+Building target: tsl2561.elf
+Invoking: Cross ARM C Linker
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/cdac/Desktop/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"tsl2561.map" --specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group -o "tsl2561.elf"  ./source/main.o ./source/tsl2561.o  ./driverlib/source/adc.o ./driverlib/source/aes.o ./driverlib/source/ccm.o ./driverlib/source/cpu.o ./driverlib/source/debug.o ./driverlib/source/flash.o ./driverlib/source/gpio.o ./driverlib/source/gptimer.o ./driverlib/source/i2c.o ./driverlib/source/interrupt.o ./driverlib/source/ioc.o ./driverlib/source/pka.o ./driverlib/source/sha256.o ./driverlib/source/sleepmode.o ./driverlib/source/ssi.o ./driverlib/source/startup_gcc.o ./driverlib/source/sys_ctrl.o ./driverlib/source/systick.o ./driverlib/source/uart.o ./driverlib/source/uartstdio.o ./driverlib/source/udma.o ./driverlib/source/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o   
+Finished building target: tsl2561.elf
+ 
+Invoking: Cross ARM GNU Create Flash Image
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-objcopy -O ihex "tsl2561.elf"  "tsl2561.hex"
+Finished building: tsl2561.hex
+ 
+Invoking: Cross ARM GNU Print Size
+/home/cdac/tiva/gcc-arm-none-eabi-4_9-2014q4/bin/arm-none-eabi-size --format=berkeley "tsl2561.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6216	      0	    516	   6732	   1a4c	tsl2561.elf
+Finished building: tsl2561.siz
+ 
+
+12:58:05 Build Finished (took 812ms)
+
