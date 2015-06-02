@@ -27,7 +27,7 @@
 		<link>
 			<name>driverlib</name>
 			<type>2</type>
-			<location>/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib</location>
+			<location>/opt/Ubimote_HR/driverlib</location>
 		</link>
 	</linkedResources>
 </projectDescription>

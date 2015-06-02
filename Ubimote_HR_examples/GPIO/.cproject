@@ -49,17 +49,17 @@
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.147261532" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1146996589" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.530452573" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1475247937" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1614870619" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1551073179" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
 								</option>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.546717056" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.default" valueType="enumerated"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1725295036" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
@@ -69,7 +69,7 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1645823220" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other.507229609" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other" value="--specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group" valueType="string"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1120155162" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/cc2538.lds"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/cc2538.lds"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input.733430600" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>

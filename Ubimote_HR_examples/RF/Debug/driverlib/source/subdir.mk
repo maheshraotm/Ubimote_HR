@@ -4,28 +4,28 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/adc.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/aes.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ccm.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/cpu.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/debug.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/flash.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/gpio.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/gptimer.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/i2c.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/interrupt.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ioc.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/pka.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sha256.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sleepmode.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ssi.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/startup_gcc.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sys_ctrl.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/systick.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/uart.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/uartstdio.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/udma.c \
-/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/watchdog.c 
+/opt/Ubimote_HR/driverlib/source/adc.c \
+/opt/Ubimote_HR/driverlib/source/aes.c \
+/opt/Ubimote_HR/driverlib/source/ccm.c \
+/opt/Ubimote_HR/driverlib/source/cpu.c \
+/opt/Ubimote_HR/driverlib/source/debug.c \
+/opt/Ubimote_HR/driverlib/source/flash.c \
+/opt/Ubimote_HR/driverlib/source/gpio.c \
+/opt/Ubimote_HR/driverlib/source/gptimer.c \
+/opt/Ubimote_HR/driverlib/source/i2c.c \
+/opt/Ubimote_HR/driverlib/source/interrupt.c \
+/opt/Ubimote_HR/driverlib/source/ioc.c \
+/opt/Ubimote_HR/driverlib/source/pka.c \
+/opt/Ubimote_HR/driverlib/source/sha256.c \
+/opt/Ubimote_HR/driverlib/source/sleepmode.c \
+/opt/Ubimote_HR/driverlib/source/ssi.c \
+/opt/Ubimote_HR/driverlib/source/startup_gcc.c \
+/opt/Ubimote_HR/driverlib/source/sys_ctrl.c \
+/opt/Ubimote_HR/driverlib/source/systick.c \
+/opt/Ubimote_HR/driverlib/source/uart.c \
+/opt/Ubimote_HR/driverlib/source/uartstdio.c \
+/opt/Ubimote_HR/driverlib/source/udma.c \
+/opt/Ubimote_HR/driverlib/source/watchdog.c 
 
 OBJS += \
 ./driverlib/source/adc.o \
@@ -77,157 +77,157 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-driverlib/source/adc.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/adc.c
+driverlib/source/adc.o: /opt/Ubimote_HR/driverlib/source/adc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/aes.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/aes.c
+driverlib/source/aes.o: /opt/Ubimote_HR/driverlib/source/aes.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/ccm.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ccm.c
+driverlib/source/ccm.o: /opt/Ubimote_HR/driverlib/source/ccm.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/cpu.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/cpu.c
+driverlib/source/cpu.o: /opt/Ubimote_HR/driverlib/source/cpu.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/debug.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/debug.c
+driverlib/source/debug.o: /opt/Ubimote_HR/driverlib/source/debug.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/flash.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/flash.c
+driverlib/source/flash.o: /opt/Ubimote_HR/driverlib/source/flash.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/gpio.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/gpio.c
+driverlib/source/gpio.o: /opt/Ubimote_HR/driverlib/source/gpio.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/gptimer.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/gptimer.c
+driverlib/source/gptimer.o: /opt/Ubimote_HR/driverlib/source/gptimer.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/i2c.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/i2c.c
+driverlib/source/i2c.o: /opt/Ubimote_HR/driverlib/source/i2c.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/interrupt.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/interrupt.c
+driverlib/source/interrupt.o: /opt/Ubimote_HR/driverlib/source/interrupt.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/ioc.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ioc.c
+driverlib/source/ioc.o: /opt/Ubimote_HR/driverlib/source/ioc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/pka.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/pka.c
+driverlib/source/pka.o: /opt/Ubimote_HR/driverlib/source/pka.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/sha256.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sha256.c
+driverlib/source/sha256.o: /opt/Ubimote_HR/driverlib/source/sha256.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/sleepmode.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sleepmode.c
+driverlib/source/sleepmode.o: /opt/Ubimote_HR/driverlib/source/sleepmode.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/ssi.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/ssi.c
+driverlib/source/ssi.o: /opt/Ubimote_HR/driverlib/source/ssi.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/startup_gcc.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/startup_gcc.c
+driverlib/source/startup_gcc.o: /opt/Ubimote_HR/driverlib/source/startup_gcc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/sys_ctrl.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/sys_ctrl.c
+driverlib/source/sys_ctrl.o: /opt/Ubimote_HR/driverlib/source/sys_ctrl.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/systick.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/systick.c
+driverlib/source/systick.o: /opt/Ubimote_HR/driverlib/source/systick.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/uart.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/uart.c
+driverlib/source/uart.o: /opt/Ubimote_HR/driverlib/source/uart.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/uartstdio.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/uartstdio.c
+driverlib/source/uartstdio.o: /opt/Ubimote_HR/driverlib/source/uartstdio.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/udma.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/udma.c
+driverlib/source/udma.o: /opt/Ubimote_HR/driverlib/source/udma.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-driverlib/source/watchdog.o: /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source/watchdog.c
+driverlib/source/watchdog.o: /opt/Ubimote_HR/driverlib/source/watchdog.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

@@ -29,7 +29,7 @@ C_DEPS += \
 source/%.o: ../source/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross ARM C Compiler'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/opt/Ubimote_HR/driverlib -I/opt/Ubimote_HR/driverlib/headers -I/opt/Ubimote_HR/driverlib/source -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

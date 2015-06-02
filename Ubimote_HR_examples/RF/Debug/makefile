@@ -42,7 +42,7 @@ all: RF.elf secondary-outputs
 RF.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross ARM C Linker'
-	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"RF.map" -o "RF.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /opt/Ubimote_HR/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"RF.map" -o "RF.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

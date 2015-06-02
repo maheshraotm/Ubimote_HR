@@ -1,0 +1,7 @@
+15:19:27 **** Clean-only build of configuration Debug for project ADC_tempsensor ****
+make clean 
+rm -rf  ADC_tempsensor.siz  ./source/main.o  ./driverlib/adc.o ./driverlib/aes.o ./driverlib/ccm.o ./driverlib/cpu.o ./driverlib/debug.o ./driverlib/flash.o ./driverlib/gpio.o ./driverlib/gptimer.o ./driverlib/i2c.o ./driverlib/interrupt.o ./driverlib/ioc.o ./driverlib/pka.o ./driverlib/sha256.o ./driverlib/sleepmode.o ./driverlib/ssi.o ./driverlib/startup_gcc.o ./driverlib/sys_ctrl.o ./driverlib/systick.o ./driverlib/uart.o ./driverlib/uartstdio.o ./driverlib/udma.o ./driverlib/watchdog.o  ./source/main.d  ./driverlib/adc.d ./driverlib/aes.d ./driverlib/ccm.d ./driverlib/cpu.d ./driverlib/debug.d ./driverlib/flash.d ./driverlib/gpio.d ./driverlib/gptimer.d ./driverlib/i2c.d ./driverlib/interrupt.d ./driverlib/ioc.d ./driverlib/pka.d ./driverlib/sha256.d ./driverlib/sleepmode.d ./driverlib/ssi.d ./driverlib/startup_gcc.d ./driverlib/sys_ctrl.d ./driverlib/systick.d ./driverlib/uart.d ./driverlib/uartstdio.d ./driverlib/udma.d ./driverlib/watchdog.d  ADC_tempsensor.hex  ADC_tempsensor.elf
+ 
+
+15:19:27 Build Finished (took 59ms)
+

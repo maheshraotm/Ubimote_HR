@@ -27,12 +27,12 @@
 		<link>
 			<name>Ubimote_bsp</name>
 			<type>2</type>
-			<location>/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp</location>
+			<location>/opt/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp</location>
 		</link>
 		<link>
 			<name>driverlib</name>
 			<type>2</type>
-			<location>/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source</location>
+			<location>/opt/Ubimote_HR/driverlib</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,0 +1,57 @@
+!SESSION 2015-06-02 14:20:23.941 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:23:07.811
+!MESSAGE Indexed 'RF' (27 sources, 79 headers) in 2.61 sec: 2,669 declarations; 9,352 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:23:08.773
+!MESSAGE Indexed 'ADC_tempsensor' (23 sources, 79 headers) in 0.951 sec: 3,149 declarations; 9,433 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:23:09.410
+!MESSAGE Indexed 'GPIO' (23 sources, 70 headers) in 0.631 sec: 2,403 declarations; 8,513 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:23:09.982
+!MESSAGE Indexed 'UART' (23 sources, 73 headers) in 0.565 sec: 2,362 declarations; 8,534 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2015-06-02 14:25:13.619 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:31:02.265
+!MESSAGE Indexed 'RF' (27 sources, 79 headers) in 2.01 sec: 2,669 declarations; 9,352 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:31:03.263
+!MESSAGE Indexed 'ADC_tempsensor' (23 sources, 79 headers) in 0.988 sec: 3,149 declarations; 9,433 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:31:03.859
+!MESSAGE Indexed 'GPIO' (23 sources, 70 headers) in 0.592 sec: 2,403 declarations; 8,513 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 14:31:04.405
+!MESSAGE Indexed 'UART' (23 sources, 73 headers) in 0.54 sec: 2,362 declarations; 8,534 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+!SESSION 2015-06-02 15:17:26.909 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.7.0_80
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 15:26:38.016
+!MESSAGE Indexed 'tsl2671' (28 sources, 82 headers) in 2.23 sec: 3,342 declarations; 9,877 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 15:26:38.912
+!MESSAGE Indexed 'tsl2561' (28 sources, 83 headers) in 0.889 sec: 3,372 declarations; 9,882 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.0075%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 15:26:39.555
+!MESSAGE Indexed 'bmp180' (29 sources, 84 headers) in 0.638 sec: 3,481 declarations; 10,221 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2015-06-02 15:26:40.180
+!MESSAGE Indexed 'sht21' (28 sources, 82 headers) in 0.62 sec: 3,349 declarations; 9,818 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)

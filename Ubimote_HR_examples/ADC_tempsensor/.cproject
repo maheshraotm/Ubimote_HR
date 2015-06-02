@@ -49,18 +49,18 @@
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.517427332" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1802180412" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1411510575" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.1208767808" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.851921780" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.1727142339" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.default" valueType="enumerated"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.679833432" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/source"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.1560669927" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
@@ -69,8 +69,9 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.1061589863" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other.1312062732" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other" value="--specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group" valueType="string"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.1154566943" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_examples/driverlib/cc2538.lds"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/cc2538.lds"/>
 								</option>
+								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart.781301999" name="Do not use standard start files (-nostartfiles)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.nostart" value="false" valueType="boolean"/>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input.1149240661" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -94,6 +95,11 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.debug.502085468.453275386" name="main.c" rcbsApplicability="disable" resourcePath="source/main.c" toolsToInvoke="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.851921780.1692467651">
+						<tool id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.851921780.1692467651" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.851921780">
+							<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.147100447" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
+						</tool>
+					</fileInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="driverlib"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="source"/>

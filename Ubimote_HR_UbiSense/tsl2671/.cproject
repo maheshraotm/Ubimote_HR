@@ -49,22 +49,20 @@
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.1047123640" name="Cross ARM GNU Assembler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor.1950287385" name="Use preprocessor" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.usepreprocessor" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths.1739548390" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.assembler.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input.511828860" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.assembler.input"/>
 							</tool>
 							<tool command="arm-none-eabi-gcc" id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.1004583471" name="Cross ARM C Compiler" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler">
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.459745769" name="Language standard" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std" useByScannerDiscovery="true" value="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.std.default" valueType="enumerated"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths.1839486373" name="Include paths (-I)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.compiler.include.paths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source"/>
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/tsl2671/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/source"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/headers"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input.378911227" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.compiler.input"/>
 							</tool>
@@ -73,7 +71,7 @@
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections.875858744" name="Remove unused sections (-Xlinker --gc-sections)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.gcsections" value="true" valueType="boolean"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other.977181759" name="Other linker flags" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.other" value="--specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group" valueType="string"/>
 								<option id="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile.837262797" name="Script files (-T)" superClass="ilg.gnuarmeclipse.managedbuild.cross.option.c.linker.scriptfile" valueType="stringList">
-									<listOptionValue builtIn="false" value="/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/cc2538.lds"/>
+									<listOptionValue builtIn="false" value="/opt/Ubimote_HR/driverlib/cc2538.lds"/>
 								</option>
 								<inputType id="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input.346230999" superClass="ilg.gnuarmeclipse.managedbuild.cross.tool.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
