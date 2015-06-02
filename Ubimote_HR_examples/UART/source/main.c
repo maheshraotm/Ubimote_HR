@@ -1,7 +1,7 @@
 /*
 
    UART project for Ubimote_HR
-   © CDAC Knowledge part Bangalore
+   CDAC Knowledge park Bangalore
 
    Author: rangineni balasubramanyam <balasubramanyam@cdac.in>
 
