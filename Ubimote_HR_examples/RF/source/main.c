@@ -1,6 +1,6 @@
 /*
 
-   GPIO project for Ubimote_HR
+   RF project for Ubimote_HR
    © CDAC Knowledge part Bangalore
 
    Author: rangineni balasubramanyam <balasubramanyam@cdac.in>
