@@ -24,10 +24,20 @@ UbiSense is the sensor board developed for testing and integrating various senso
 
 
 List of sensors available 
+
 1. Temperature and Relative Humidity
+ 
 2. Ambient light
+
 3. Proximity
+
 4. Barometric pressure sensor
+
+
+
+
+
+
  
 
 
