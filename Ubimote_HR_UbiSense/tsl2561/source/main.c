@@ -4,7 +4,7 @@
  Author      : Rangineni Balasubramanyam
  Version     :
  Copyright   : CDAC KP Bangalore
- Description : Hello World in C
+ Description : tsl2561 example for Ubimote UbiSense
  ============================================================================
  */
 
@@ -33,7 +33,7 @@ main(void)
 
 	unsigned long  lux=0;
 
-		board_init();
+	    board_init();
 
 	    init_i2c(false); // false for 100kbps; true for 400kbps
 
@@ -41,6 +41,7 @@ main(void)
 	    // Set up the serial console to use for displaying messages.  This is
 	    // just for this example program and is not needed for I2C operation.
 	    //
+	    
 	    InitConsole();
 
 	    init_tsl2561();
