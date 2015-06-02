@@ -32,7 +32,7 @@ int
 main(void)
 {
 		uint16_t proximity = 0;
-			board_init();
+		    board_init();
 		    init_i2c(false); // false for 100kbps; true for 400kbps
 		    InitConsole();
 
