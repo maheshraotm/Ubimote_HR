@@ -4,7 +4,11 @@
  Author      : Rangineni Balasubramanyam
  Version     :
  Copyright   : CDAC KP Bangalore
+<<<<<<< HEAD
  Description : UbiSense - sht21 example project for Ubimote HR
+=======
+ Description : Example program for sht21 for Ubimote_HR
+>>>>>>> origin/master
  ============================================================================
  */
 #include <stdio.h>
