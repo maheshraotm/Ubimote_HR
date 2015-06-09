@@ -1,11 +1,7 @@
-18:42:54 **** Incremental Build of configuration Debug for project bmp180 ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "bmp180.elf"
-   text	   data	    bss	    dec	    hex	filename
-   8364	      0	    572	   8936	   22e8	bmp180.elf
-Finished building: bmp180.siz
+10:50:35 **** Clean-only build of configuration Debug for project bmp180 ****
+make clean 
+rm -rf  bmp180.siz  ./source/Ubimote_HR_bmp180_i2c.o ./source/bmp180.o ./source/main.o  ./driverlib/source/adc.o ./driverlib/source/aes.o ./driverlib/source/ccm.o ./driverlib/source/cpu.o ./driverlib/source/debug.o ./driverlib/source/flash.o ./driverlib/source/gpio.o ./driverlib/source/gptimer.o ./driverlib/source/i2c.o ./driverlib/source/interrupt.o ./driverlib/source/ioc.o ./driverlib/source/pka.o ./driverlib/source/sha256.o ./driverlib/source/sleepmode.o ./driverlib/source/ssi.o ./driverlib/source/startup_gcc.o ./driverlib/source/sys_ctrl.o ./driverlib/source/systick.o ./driverlib/source/uart.o ./driverlib/source/uartstdio.o ./driverlib/source/udma.o ./driverlib/source/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o  ./source/Ubimote_HR_bmp180_i2c.d ./source/bmp180.d ./source/main.d  ./driverlib/source/adc.d ./driverlib/source/aes.d ./driverlib/source/ccm.d ./driverlib/source/cpu.d ./driverlib/source/debug.d ./driverlib/source/flash.d ./driverlib/source/gpio.d ./driverlib/source/gptimer.d ./driverlib/source/i2c.d ./driverlib/source/interrupt.d ./driverlib/source/ioc.d ./driverlib/source/pka.d ./driverlib/source/sha256.d ./driverlib/source/sleepmode.d ./driverlib/source/ssi.d ./driverlib/source/startup_gcc.d ./driverlib/source/sys_ctrl.d ./driverlib/source/systick.d ./driverlib/source/uart.d ./driverlib/source/uartstdio.d ./driverlib/source/udma.d ./driverlib/source/watchdog.d  ./Ubimote_bsp/Ubimote_i2c.d ./Ubimote_bsp/Ubimote_uart.d ./Ubimote_bsp/board.d ./Ubimote_bsp/delay.d  bmp180.hex  bmp180.elf
  
 
-18:42:54 Build Finished (took 68ms)
+10:50:35 Build Finished (took 57ms)
 

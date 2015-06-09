@@ -68,33 +68,6 @@ void Uart_Put_String(unsigned char data[])
 */
 //*****************************************************************************
 //
-// This function sets up UART0 to be used for a console to display information
-// as the example is running.
-//
-//*****************************************************************************
-void
-InitConsole(void)
-{
-    //
-    // Map UART signals to the correct GPIO pins and configure them as
-    // hardware controlled.
-    //
-    IOCPinConfigPeriphOutput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_TXD,
-                             IOC_MUX_OUT_SEL_UART0_TXD);
-    GPIOPinTypeUARTOutput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_TXD);
-
-    IOCPinConfigPeriphInput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_RXD,
-                            IOC_UARTRXD_UART0);
-    GPIOPinTypeUARTInput(Ubimote_GPIO_UART_BASE, Ubimote_PIN_UART_RXD);
-
-    //
-    // Initialize the UART (UART0) for console I/O.
-    //
-    UARTStdioInit(0);
-}
-
-//*****************************************************************************
-//
 // Main function. Sets up the ADC to use the temperature sensor as input. Note
 // that you must enable to RF Core in order to use the ADC.
 // The function runs a while forever loop converting the readout from ADC

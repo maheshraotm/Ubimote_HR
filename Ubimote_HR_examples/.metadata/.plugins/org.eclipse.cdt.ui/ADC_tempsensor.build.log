@@ -1,11 +1,7 @@
-19:37:23 **** Incremental Build of configuration Debug for project ADC_tempsensor ****
-make all 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "ADC_tempsensor.elf"
-   text	   data	    bss	    dec	    hex	filename
-   7140	      0	    516	   7656	   1de8	ADC_tempsensor.elf
-Finished building: ADC_tempsensor.siz
+11:02:02 **** Clean-only build of configuration Debug for project ADC_tempsensor ****
+make clean 
+rm -rf  ADC_tempsensor.siz  ./source/main.o  ./driverlib/adc.o ./driverlib/aes.o ./driverlib/ccm.o ./driverlib/cpu.o ./driverlib/debug.o ./driverlib/flash.o ./driverlib/gpio.o ./driverlib/gptimer.o ./driverlib/i2c.o ./driverlib/interrupt.o ./driverlib/ioc.o ./driverlib/pka.o ./driverlib/sha256.o ./driverlib/sleepmode.o ./driverlib/ssi.o ./driverlib/startup_gcc.o ./driverlib/sys_ctrl.o ./driverlib/systick.o ./driverlib/uart.o ./driverlib/uartstdio.o ./driverlib/udma.o ./driverlib/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o  ./source/main.d  ./driverlib/adc.d ./driverlib/aes.d ./driverlib/ccm.d ./driverlib/cpu.d ./driverlib/debug.d ./driverlib/flash.d ./driverlib/gpio.d ./driverlib/gptimer.d ./driverlib/i2c.d ./driverlib/interrupt.d ./driverlib/ioc.d ./driverlib/pka.d ./driverlib/sha256.d ./driverlib/sleepmode.d ./driverlib/ssi.d ./driverlib/startup_gcc.d ./driverlib/sys_ctrl.d ./driverlib/systick.d ./driverlib/uart.d ./driverlib/uartstdio.d ./driverlib/udma.d ./driverlib/watchdog.d  ./Ubimote_bsp/Ubimote_i2c.d ./Ubimote_bsp/Ubimote_uart.d ./Ubimote_bsp/board.d ./Ubimote_bsp/delay.d  ADC_tempsensor.hex  ADC_tempsensor.elf
  
 
-19:37:23 Build Finished (took 61ms)
+11:02:02 Build Finished (took 58ms)
 

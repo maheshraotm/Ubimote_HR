@@ -25,6 +25,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>Ubimote_bsp</name>
+			<type>2</type>
+			<location>/opt/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp</location>
+		</link>
+		<link>
 			<name>driverlib</name>
 			<type>2</type>
 			<location>/opt/Ubimote_HR/driverlib/source</location>

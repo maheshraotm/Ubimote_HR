@@ -4,7 +4,7 @@
  Author      : Rangineni Balasubramanyam
  Version     :
  Copyright   : CDAC KP Bangalore
- Description : Ubimote HR tsl2671 example for UbiSense
+ Description : UbiSense - tsl2671 example project for Ubimote HR
  ============================================================================
  */
 #include <stdio.h>

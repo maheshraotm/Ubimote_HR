@@ -1,25 +1,7 @@
-18:38:16 **** Incremental Build of configuration Debug for project sht21 ****
-make all 
-Building file: ../source/main.c
-Invoking: Cross ARM C Compiler
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/headers -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/source -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/sht21/source -I/home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/Ubimote_bsp -std=gnu11 -MMD -MP -MF"source/main.d" -MT"source/main.o" -c -o "source/main.o" "../source/main.c"
-Finished building: ../source/main.c
- 
-Building target: sht21.elf
-Invoking: Cross ARM C Linker
-arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T /home/cdac/Ubimote_HR/Ubimote_HR_UbiSense/driverlib/cc2538.lds -Xlinker --gc-sections -Wl,-Map,"sht21.map" --specs=rdimon.specs -Wl,--start-group -lgcc -lc -lc -lm -lrdimon -Wl,--end-group -o "sht21.elf"  ./source/main.o ./source/sht21.o  ./driverlib/adc.o ./driverlib/aes.o ./driverlib/ccm.o ./driverlib/cpu.o ./driverlib/debug.o ./driverlib/flash.o ./driverlib/gpio.o ./driverlib/gptimer.o ./driverlib/i2c.o ./driverlib/interrupt.o ./driverlib/ioc.o ./driverlib/pka.o ./driverlib/sha256.o ./driverlib/sleepmode.o ./driverlib/ssi.o ./driverlib/startup_gcc.o ./driverlib/sys_ctrl.o ./driverlib/systick.o ./driverlib/uart.o ./driverlib/uartstdio.o ./driverlib/udma.o ./driverlib/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o   
-Finished building target: sht21.elf
- 
-Invoking: Cross ARM GNU Create Flash Image
-arm-none-eabi-objcopy -O ihex "sht21.elf"  "sht21.hex"
-Finished building: sht21.hex
- 
-Invoking: Cross ARM GNU Print Size
-arm-none-eabi-size --format=berkeley "sht21.elf"
-   text	   data	    bss	    dec	    hex	filename
-   6156	      0	    516	   6672	   1a10	sht21.elf
-Finished building: sht21.siz
+10:50:38 **** Clean-only build of configuration Debug for project sht21 ****
+make clean 
+rm -rf  sht21.siz  ./source/main.o ./source/sht21.o  ./driverlib/source/adc.o ./driverlib/source/aes.o ./driverlib/source/ccm.o ./driverlib/source/cpu.o ./driverlib/source/debug.o ./driverlib/source/flash.o ./driverlib/source/gpio.o ./driverlib/source/gptimer.o ./driverlib/source/i2c.o ./driverlib/source/interrupt.o ./driverlib/source/ioc.o ./driverlib/source/pka.o ./driverlib/source/sha256.o ./driverlib/source/sleepmode.o ./driverlib/source/ssi.o ./driverlib/source/startup_gcc.o ./driverlib/source/sys_ctrl.o ./driverlib/source/systick.o ./driverlib/source/uart.o ./driverlib/source/uartstdio.o ./driverlib/source/udma.o ./driverlib/source/watchdog.o  ./Ubimote_bsp/Ubimote_i2c.o ./Ubimote_bsp/Ubimote_uart.o ./Ubimote_bsp/board.o ./Ubimote_bsp/delay.o  ./source/main.d ./source/sht21.d  ./driverlib/source/adc.d ./driverlib/source/aes.d ./driverlib/source/ccm.d ./driverlib/source/cpu.d ./driverlib/source/debug.d ./driverlib/source/flash.d ./driverlib/source/gpio.d ./driverlib/source/gptimer.d ./driverlib/source/i2c.d ./driverlib/source/interrupt.d ./driverlib/source/ioc.d ./driverlib/source/pka.d ./driverlib/source/sha256.d ./driverlib/source/sleepmode.d ./driverlib/source/ssi.d ./driverlib/source/startup_gcc.d ./driverlib/source/sys_ctrl.d ./driverlib/source/systick.d ./driverlib/source/uart.d ./driverlib/source/uartstdio.d ./driverlib/source/udma.d ./driverlib/source/watchdog.d  ./Ubimote_bsp/Ubimote_i2c.d ./Ubimote_bsp/Ubimote_uart.d ./Ubimote_bsp/board.d ./Ubimote_bsp/delay.d  sht21.hex  sht21.elf
  
 
-18:38:17 Build Finished (took 213ms)
+10:50:38 Build Finished (took 61ms)
 

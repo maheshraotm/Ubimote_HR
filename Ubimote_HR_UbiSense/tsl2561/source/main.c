@@ -4,7 +4,7 @@
  Author      : Rangineni Balasubramanyam
  Version     :
  Copyright   : CDAC KP Bangalore
- Description : Hello World in C
+ Description : UbiSense - tsl2561 example project for Ubimote HR
  ============================================================================
  */
 
