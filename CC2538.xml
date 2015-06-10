@@ -697,7 +697,7 @@ default." address="0x400DC400" access="rw" />
 	<register name="PKA_OPTIONS" description="" address="0x440040F4" access="ro" /> 
 	<register name="PKA_SW_REV" description="" address="0x440040F8" access="ro" /> 
 	<register name="PKA_REVISION" description="" address="0x440040FC" access="ro" /> 
-	
 	</registergroup>
 	</group>
+	
 </model>
