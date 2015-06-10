@@ -348,5 +348,356 @@ default." address="0x400DC400" access="rw" />
 	</registergroup>
 	</group>
 	 
-	 
+	<group name="GPTIMER" description="GENERAL PURPOSE TIMERS registers">
+	<registergroup name="GPTIMER0" description=""> 
+	<register name="GPTIMER_CFG" description="" address="0x40030000" access="rw" /> 
+	<register name="GPTIMER_TAMR" description="" address="0x40030004" access="rw" /> 
+	<register name="GPTIMER_TBMR" description="" address="0x40030008" access="rw" /> 
+	<register name="GPTIMER_CTL" description="" address="0x4003000C" access="rw" /> 
+	<register name="GPTIMER_SYNC" description="" address="0x40030010" access="rw" /> 
+	<register name="GPTIMER_IMR" description="" address="0x40030018" access="rw" /> 
+	<register name="GPTIMER_RIS" description="" address="0x4003001C" access="ro" /> 
+	<register name="GPTIMER_MIS" description="" address="0x40030020" access="ro" /> 
+	<register name="GPTIMER_ICR" description="" address="0x400300240" access="rw" /> 
+	<register name="GPTIMER_TAILR" description="" address="0x40030028" access="rw" /> 
+	<register name="GPTIMER_TBILR" description="" address="0x4003002C" access="rw" /> 
+	<register name="GPTIMER_TAMATCHR" description="" address="0x40030030" access="rw" /> 
+	<register name="GPTIMER_TBMATCHR" description="" address="0x40030034" access="rw" /> 
+	<register name="GPTIMER_TAPR" description="" address="0x40030038" access="rw" /> 
+	<register name="GPTIMER_TBPR" description="" address="0x4003003C" access="rw" /> 
+	<register name="GPTIMER_TAPMR" description="" address="0x40030040" access="rw" /> 
+	<register name="GPTIMER_TBPMR" description="" address="0x40030044" access="rw" /> 
+	<register name="GPTIMER_TAR" description="" address="0x40030048" access="ro" /> 
+	<register name="GPTIMER_TBR" description="" address="0x4003004C" access="ro" /> 
+	<register name="GPTIMER_TAV" description="" address="0x40030050" access="rw" /> 
+	<register name="GPTIMER_TBV" description="" address="0x40030054" access="rw" /> 
+	<register name="GPTIMER_TAPS" description="" address="0x4003005C" access="ro" /> 
+	<register name="GPTIMER_TBPS" description="" address="0x40030060" access="ro" /> 
+	<register name="GPTIMER_TAPV" description="" address="0x40030064" access="ro" /> 
+	<register name="GPTIMER_TBPV" description="" address="0x40030068" access="ro" /> 
+	<register name="GPTIMER_PP" description="" address="0x40030FC0" access="ro" /> 
+	</registergroup>
+	
+	<registergroup name="GPTIMER1" description=""> 
+	<register name="GPTIMER_CFG" description="" address="0x40031000" access="rw" /> 
+	<register name="GPTIMER_TAMR" description="" address="0x40031004" access="rw" /> 
+	<register name="GPTIMER_TBMR" description="" address="0x40031008" access="rw" /> 
+	<register name="GPTIMER_CTL" description="" address="0x4003100C" access="rw" /> 
+	<register name="GPTIMER_SYNC" description="" address="0x40031010" access="rw" /> 
+	<register name="GPTIMER_IMR" description="" address="0x40031018" access="rw" /> 
+	<register name="GPTIMER_RIS" description="" address="0x4003101C" access="ro" /> 
+	<register name="GPTIMER_MIS" description="" address="0x40031020" access="ro" /> 
+	<register name="GPTIMER_ICR" description="" address="0x400310240" access="rw" /> 
+	<register name="GPTIMER_TAILR" description="" address="0x40031028" access="rw" /> 
+	<register name="GPTIMER_TBILR" description="" address="0x4003102C" access="rw" /> 
+	<register name="GPTIMER_TAMATCHR" description="" address="0x40031030" access="rw" /> 
+	<register name="GPTIMER_TBMATCHR" description="" address="0x40031034" access="rw" /> 
+	<register name="GPTIMER_TAPR" description="" address="0x40031038" access="rw" /> 
+	<register name="GPTIMER_TBPR" description="" address="0x4003103C" access="rw" /> 
+	<register name="GPTIMER_TAPMR" description="" address="0x40031040" access="rw" /> 
+	<register name="GPTIMER_TBPMR" description="" address="0x40031044" access="rw" /> 
+	<register name="GPTIMER_TAR" description="" address="0x40031048" access="ro" /> 
+	<register name="GPTIMER_TBR" description="" address="0x4003104C" access="ro" /> 
+	<register name="GPTIMER_TAV" description="" address="0x40031050" access="rw" /> 
+	<register name="GPTIMER_TBV" description="" address="0x40031054" access="rw" /> 
+	<register name="GPTIMER_TAPS" description="" address="0x4003105C" access="ro" /> 
+	<register name="GPTIMER_TBPS" description="" address="0x40031060" access="ro" /> 
+	<register name="GPTIMER_TAPV" description="" address="0x40031064" access="ro" /> 
+	<register name="GPTIMER_TBPV" description="" address="0x40031068" access="ro" /> 
+	<register name="GPTIMER_PP" description="" address="0x40031FC0" access="ro" /> 
+	</registergroup>
+	
+	<registergroup name="GPTIMER2" description=""> 
+	<register name="GPTIMER_CFG" description="" address="0x40032000" access="rw" /> 
+	<register name="GPTIMER_TAMR" description="" address="0x40032004" access="rw" /> 
+	<register name="GPTIMER_TBMR" description="" address="0x40032008" access="rw" /> 
+	<register name="GPTIMER_CTL" description="" address="0x4003200C" access="rw" /> 
+	<register name="GPTIMER_SYNC" description="" address="0x40032010" access="rw" /> 
+	<register name="GPTIMER_IMR" description="" address="0x40032018" access="rw" /> 
+	<register name="GPTIMER_RIS" description="" address="0x4003201C" access="ro" /> 
+	<register name="GPTIMER_MIS" description="" address="0x40032020" access="ro" /> 
+	<register name="GPTIMER_ICR" description="" address="0x400320240" access="rw" /> 
+	<register name="GPTIMER_TAILR" description="" address="0x40032028" access="rw" /> 
+	<register name="GPTIMER_TBILR" description="" address="0x4003202C" access="rw" /> 
+	<register name="GPTIMER_TAMATCHR" description="" address="0x40032030" access="rw" /> 
+	<register name="GPTIMER_TBMATCHR" description="" address="0x40032034" access="rw" /> 
+	<register name="GPTIMER_TAPR" description="" address="0x40032038" access="rw" /> 
+	<register name="GPTIMER_TBPR" description="" address="0x4003203C" access="rw" /> 
+	<register name="GPTIMER_TAPMR" description="" address="0x40032040" access="rw" /> 
+	<register name="GPTIMER_TBPMR" description="" address="0x40032044" access="rw" /> 
+	<register name="GPTIMER_TAR" description="" address="0x40032048" access="ro" /> 
+	<register name="GPTIMER_TBR" description="" address="0x4003204C" access="ro" /> 
+	<register name="GPTIMER_TAV" description="" address="0x40032050" access="rw" /> 
+	<register name="GPTIMER_TBV" description="" address="0x40032054" access="rw" /> 
+	<register name="GPTIMER_TAPS" description="" address="0x4003205C" access="ro" /> 
+	<register name="GPTIMER_TBPS" description="" address="0x40032060" access="ro" /> 
+	<register name="GPTIMER_TAPV" description="" address="0x40032064" access="ro" /> 
+	<register name="GPTIMER_TBPV" description="" address="0x40032068" access="ro" /> 
+	<register name="GPTIMER_PP" description="" address="0x40032FC0" access="ro" /> 
+	</registergroup>
+	
+	<registergroup name="GPTIMER3" description=""> 
+	<register name="GPTIMER_CFG" description="" address="0x40033000" access="rw" /> 
+	<register name="GPTIMER_TAMR" description="" address="0x40033004" access="rw" /> 
+	<register name="GPTIMER_TBMR" description="" address="0x40033008" access="rw" /> 
+	<register name="GPTIMER_CTL" description="" address="0x4003300C" access="rw" /> 
+	<register name="GPTIMER_SYNC" description="" address="0x40033010" access="rw" /> 
+	<register name="GPTIMER_IMR" description="" address="0x40033018" access="rw" /> 
+	<register name="GPTIMER_RIS" description="" address="0x4003301C" access="ro" /> 
+	<register name="GPTIMER_MIS" description="" address="0x40033020" access="ro" /> 
+	<register name="GPTIMER_ICR" description="" address="0x400330240" access="rw" /> 
+	<register name="GPTIMER_TAILR" description="" address="0x40033028" access="rw" /> 
+	<register name="GPTIMER_TBILR" description="" address="0x4003302C" access="rw" /> 
+	<register name="GPTIMER_TAMATCHR" description="" address="0x40033030" access="rw" /> 
+	<register name="GPTIMER_TBMATCHR" description="" address="0x40033034" access="rw" /> 
+	<register name="GPTIMER_TAPR" description="" address="0x40033038" access="rw" /> 
+	<register name="GPTIMER_TBPR" description="" address="0x4003303C" access="rw" /> 
+	<register name="GPTIMER_TAPMR" description="" address="0x40033040" access="rw" /> 
+	<register name="GPTIMER_TBPMR" description="" address="0x40033044" access="rw" /> 
+	<register name="GPTIMER_TAR" description="" address="0x40033048" access="ro" /> 
+	<register name="GPTIMER_TBR" description="" address="0x4003304C" access="ro" /> 
+	<register name="GPTIMER_TAV" description="" address="0x40033050" access="rw" /> 
+	<register name="GPTIMER_TBV" description="" address="0x40033054" access="rw" /> 
+	<register name="GPTIMER_TAPS" description="" address="0x4003305C" access="ro" /> 
+	<register name="GPTIMER_TBPS" description="" address="0x40033060" access="ro" /> 
+	<register name="GPTIMER_TAPV" description="" address="0x40033064" access="ro" /> 
+	<register name="GPTIMER_TBPV" description="" address="0x40033068" access="ro" /> 
+	<register name="GPTIMER_PP" description="" address="0x40033FC0" access="ro" /> 
+	</registergroup>
+	</group>
+	
+	<group name="RFCORE" description="MAC Timer Registers  -  RFCORE_SFR Registers">
+	<registergroup name="RFCORE_SFR" description=""> 
+	<register name="RFCORE_SFR_MTCSPCFG" description="" address="0x40088800" access="rw" /> 
+	<register name="RFCORE_SFR_MTCTRL" description="" address="0x40088804" access="rw" /> 
+	<register name="RFCORE_SFR_MTIRQM" description="" address="0x40088808" access="rw" /> 
+	<register name="RFCORE_SFR_MTIRQF" description="" address="0x4008880C" access="rw" /> 
+	<register name="RFCORE_SFR_MTMSEL" description="" address="0x40088810" access="rw" /> 
+	<register name="RFCORE_SFR_MTM0" description="" address="0x40088814" access="rw" /> 
+	<register name="RFCORE_SFR_MTM1" description="" address="0x40088818" access="rw" /> 
+	<register name="RFCORE_SFR_MTMOVF2" description="" address="0x4008881C" access="rw" /> 
+	<register name="RFCORE_SFR_MTMOVF1" description="" address="0x40088820" access="rw" /> 
+	<register name="RFCORE_SFR_MTMOVF0" description="" address="0x40088824" access="rw" /> 
+	</registergroup>	
+	</group>
+	
+	<group name="SMWDTHROSC" description="Sleep Timer Registers">
+	<registergroup name="SMWDTHROSC" description=""> 
+	<register name="SMWDTHROSC_WDCTL" description="" address="0x400D5000" access="rw" /> 
+	<register name="SMWDTHROSC_ST0" description="" address="0x400D5040" access="rw" /> 
+	<register name="SMWDTHROSC_ST1" description="" address="0x400D5044" access="rw" /> 
+	<register name="SMWDTHROSC_ST2" description="" address="0x400D5048" access="rw" /> 
+	<register name="SMWDTHROSC_ST3" description="" address="0x400D504C" access="rw" /> 
+	<register name="SMWDTHROSC_STLOAD" description="" address="0x400D5050" access="ro" /> 
+	<register name="SMWDTHROSC_STCC" description="" address="0x400D5054" access="rw" /> 
+	<register name="SMWDTHROSC_STCS" description="" address="0x400D5058" access="rw" /> 
+	<register name="SMWDTHROSC_STCV0" description="" address="0x400D505C" access="ro" /> 
+	<register name="SMWDTHROSC_STCV1" description="" address="0x400D5060" access="ro" /> 
+	<register name="SMWDTHROSC_STCV2" description="" address="0x400D5064" access="ro" /> 
+	<register name="SMWDTHROSC_STCV3" description="" address="0x400D5068" access="ro" /> 	
+	</registergroup>	
+	</group>
+	
+	<group name="SOC_ADC" description="Analog-to-Digital Converter Registers">
+	<registergroup name="SOC_ADC" description=""> 
+	<register name="SOC_ADC_ADCCON1" description="" address="0x400D7000" access="rw" /> 	
+	<register name="SOC_ADC_ADCCON2" description="" address="0x400D7004" access="rw" /> 	
+	<register name="SOC_ADC_ADCCON3" description="" address="0x400D7008" access="rw" /> 	
+	<register name="SOC_ADC_ADCL" description="" address="0x400D700C" access="ro" /> 	
+	<register name="SOC_ADC_ADCH" description="" address="0x400D7010" access="ro" /> 	
+	<register name="SOC_ADC_RNDL" description="" address="0x400D7014" access="rw" /> 	
+	<register name="SOC_ADC_RNDH" description="" address="0x400D7018" access="rw" /> 	
+	<register name="SOC_ADC_CMPCTL" description="" address="0x400D7024" access="rw" /> 	
+	</registergroup>	
+	</group>
+	
+	<group name="SSI" description="SSI Registers">
+	<registergroup name="SSI0" description=""> 
+	<register name="SSI_CR0" description="" address="0x40008000" access="rw" /> 
+	<register name="SSI_CR1" description="" address="0x40008004" access="rw" /> 
+	<register name="SSI_DR" description="" address="0x40008008" access="rw" /> 
+	<register name="SSI_SR" description="" address="0x4000800C" access="ro" /> 
+	<register name="SSI_CPSR" description="" address="0x40008010" access="rw" /> 
+	<register name="SSI_IM" description="" address="0x40008014" access="rw" /> 
+	<register name="SSI_RIS" description="" address="0x40008018" access="ro" /> 
+	<register name="SSI_MIS" description="" address="0x4000801C" access="ro" /> 
+	<register name="SSI_ICR" description="" address="0x40008020" access="rw" /> 
+	<register name="SSI_DMACTL" description="" address="0x40008024" access="rw" /> 
+	<register name="SSI_CC" description="" address="0x400080C8" access="rw" /> 
+	</registergroup>	
+	<registergroup name="SSI1" description=""> 
+	<register name="SSI_CR0" description="" address="0x40009000" access="rw" /> 
+	<register name="SSI_CR1" description="" address="0x40009004" access="rw" /> 
+	<register name="SSI_DR" description="" address="0x40009008" access="rw" /> 
+	<register name="SSI_SR" description="" address="0x4000900C" access="ro" /> 
+	<register name="SSI_CPSR" description="" address="0x40009010" access="rw" /> 
+	<register name="SSI_IM" description="" address="0x40009014" access="rw" /> 
+	<register name="SSI_RIS" description="" address="0x40009018" access="ro" /> 
+	<register name="SSI_MIS" description="" address="0x4000901C" access="ro" /> 
+	<register name="SSI_ICR" description="" address="0x40009020" access="rw" /> 
+	<register name="SSI_DMACTL" description="" address="0x40009024" access="rw" /> 
+	<register name="SSI_CC" description="" address="0x400090C8" access="rw" /> 
+	</registergroup>
+	</group>
+	
+	<group name="I2C" description="I2C Registers">
+	<registergroup name="I2CM" description=""> 
+	<register name="I2CM_SA" description="" address="0x40020000" access="rw" /> 
+	<register name="I2CM_CTRL" description="" address="0x40020004" access="wo" /> 
+	<register name="I2CM_STAT" description="" address="0x40020004" access="ro" /> 
+	<register name="I2CM_DR" description="" address="0x40020008" access="rw" /> 
+	<register name="I2CM_TPR" description="" address="0x4002000C" access="rw" /> 
+	<register name="I2CM_IMR" description="" address="0x40020010" access="rw" /> 
+	<register name="I2CM_RIS" description="" address="0x40020014" access="ro" /> 
+	<register name="I2CM_MIS" description="" address="0x40020018" access="ro" /> 
+	<register name="I2CM_ICR" description="" address="0x4002001C" access="wo" /> 
+	<register name="I2CM_CR" description="" address="0x40020020" access="rw" /> 
+	</registergroup>
+	<registergroup name="I2CS" description=""> 
+	<register name="I2CS_OAR" description="" address="0x40020800" access="rw" /> 
+	<register name="I2CS_STAT" description="" address="0x40020804" access="ro" /> 
+	<register name="I2CS_CTRL" description="" address="0x40020804" access="wo" /> 
+	<register name="I2CS_DR" description="" address="0x40020808" access="rw" /> 
+	<register name="I2CS_IMR" description="" address="0x4002080C" access="rw" /> 
+	<register name="I2CS_RIS" description="" address="0x40020810" access="ro" /> 
+	<register name="I2CS_MIS" description="" address="0x40020814" access="ro" /> 
+	<register name="I2CS_ICR" description="" address="0x40020818" access="wo" /> 
+	</registergroup>
+	</group>
+	
+	<group name="USB" description="USB Registers">
+	<registergroup name="USB" description=""> 
+	<register name="USB_ADDR" description="" address="0x40089000" access="rw" /> 
+	<register name="USB_POW" description="" address="0x40089004" access="rw" /> 
+	<register name="USB_IIF" description="" address="0x40089008" access="ro" /> 
+	<register name="USB_OIF" description="" address="0x40089010" access="ro" /> 
+	<register name="USB_CIF" description="" address="0x40089018" access="ro" /> 
+	<register name="USB_IIE" description="" address="0x4008901C" access="rw" /> 
+	<register name="USB_OIE" description="" address="0x40089024" access="rw" /> 
+	<register name="USB_CIE" description="" address="0x4008902C" access="rw" /> 
+	<register name="USB_FRML" description="" address="0x40089030" access="ro" /> 
+	<register name="USB_FRMH" description="" address="0x40089034" access="ro" /> 
+	<register name="USB_INDEX" description="" address="0x40089038" access="rw" /> 
+	<register name="USB_CTRL" description="" address="0x4008903C" access="rw" /> 
+	<register name="USB_MAXI" description="" address="0x40089040" access="rw" /> 
+	<register name="USB_CS0_CSIL" description="" address="0x40089044" access="rw" /> 
+	<register name="USB_CSIH" description="" address="0x40089048" access="rw" /> 
+	<register name="USB_MAXO" description="" address="0x4008904C" access="rw" /> 
+	<register name="USB_CSOL" description="" address="0x40089050" access="rw" /> 
+	<register name="USB_CSOH" description="" address="0x40089054" access="rw" /> 
+	<register name="USB_CNT0_CNTL" description="" address="0x40089058" access="ro" /> 
+	<register name="USB_CNTH" description="" address="0x4008905C" access="ro" /> 
+	<register name="USB_F0" description="" address="0x40089080" access="rw" /> 
+	<register name="USB_F1" description="" address="0x40089088" access="rw" /> 
+	<register name="USB_F2" description="" address="0x40089090" access="rw" /> 
+	<register name="USB_F3" description="" address="0x40089098" access="rw" /> 
+	<register name="USB_F4" description="" address="0x400890A0" access="rw" /> 
+	<register name="USB_F5" description="" address="0x400890A8" access="rw" /> 
+	
+	</registergroup>
+	</group>
+	
+	<group name="AES" description="AES Registers">
+	<registergroup name="AES" description=""> 
+	<register name="AES_DMAC_CH0_CTRL" description="" address="0x4008B000" access="rw" /> 
+	<register name="AES_DMAC_CH0_EXTADDR" description="" address="0x4008B004" access="rw" /> 
+	<register name="AES_DMAC_CH0_DMALENGTH" description="" address="0x4008B00C" access="rw" /> 
+	<register name="AES_DMAC_STATUS" description="" address="0x4008B018" access="ro" /> 
+	<register name="AES_DMAC_SWRES" description="" address="0x4008B01C" access="wo" /> 
+	<register name="AES_DMAC_CH1_CTRL" description="" address="0x4008B020" access="rw" /> 
+	<register name="AES_DMAC_CH1_EXTADDR" description="" address="0x4008B024" access="rw" /> 
+	<register name="AES_DMAC_CH1_EXTADDR" description="" address="0x4008B02C" access="rw" /> 
+	<register name="AES_DMAC_MST_RUNPARAMS" description="" address="0x4008B078" access="rw" /> 
+	<register name="AES_DMAC_PERSR" description="" address="0x4008B07C" access="ro" /> 
+	<register name="AES_DMAC_OPTIONS" description="" address="0x4008B0F8" access="ro" /> 
+	<register name="AES_DMAC_VERSION" description="" address="0x4008B0FC" access="ro" /> 
+	<register name="AES_KEY_STORE_WRITE_AREA" description="" address="0x4008B400" access="rw" /> 
+	<register name="AES_KEY_STORE_WRITTEN_AREA" description="" address="0x4008B404" access="rw" /> 
+	<register name="AES_KEY_STORE_SIZE" description="" address="0x4008B408" access="rw" /> 
+	<register name="AES_KEY_STORE_READ_AREA" description="" address="0x4008B40C" access="rw" /> 
+	<register name="AES_AES_KEY2_0" description="" address="0x4008B500" access="wo" /> 
+	<register name="AES_AES_KEY2_1" description="" address="0x4008B504" access="wo" /> 
+	<register name="AES_AES_KEY2_2" description="" address="0x4008B508" access="wo" /> 
+	<register name="AES_AES_KEY2_3" description="" address="0x4008B50C" access="wo" /> 
+	<register name="AES_AES_KEY3_0" description="" address="0x4008B510" access="wo" /> 
+	<register name="AES_AES_KEY3_1" description="" address="0x4008B514" access="wo" /> 
+	<register name="AES_AES_KEY3_2" description="" address="0x4008B518" access="wo" /> 
+	<register name="AES_AES_KEY3_3" description="" address="0x4008B51C" access="wo" /> 
+	<register name="AES_AES_IV_0" description="" address="0x4008B540" access="rw" /> 
+	<register name="AES_AES_IV_1" description="" address="0x4008B544" access="rw" /> 
+	<register name="AES_AES_IV_2" description="" address="0x4008B548" access="rw" /> 
+	<register name="AES_AES_IV_3" description="" address="0x4008B54C" access="rw" /> 
+	<register name="AES_AES_CTRL" description="" address="0x4008B550" access="rw" /> 
+	<register name="AES_AES_C_LENGTH_0" description="" address="0x4008B554" access="wo" /> 
+	<register name="AES_AES_C_LENGTH_1" description="" address="0x4008B558" access="wo" /> 
+	<register name="AES_AES_AUTH_LENGTH" description="" address="0x4008B55C" access="wo" /> 
+	<register name="AES_AES_DATA_IN_OUT_0" description="" address="0x4008B560" access="wo" /> 
+	<register name="AES_AES_DATA_IN_OUT_1" description="" address="0x4008B564" access="wo" /> 
+	<register name="AES_AES_DATA_IN_OUT_2" description="" address="0x4008B568" access="wo" /> 
+	<register name="AES_AES_DATA_IN_OUT_3" description="" address="0x4008B56C" access="wo" /> 
+	<register name="AES_AES_TAG_OUT_0" description="" address="0x4008B570" access="ro" /> 
+	<register name="AES_AES_TAG_OUT_1" description="" address="0x4008B574" access="ro" /> 
+	<register name="AES_AES_TAG_OUT_2" description="" address="0x4008B578" access="ro" /> 
+	<register name="AES_AES_TAG_OUT_3" description="" address="0x4008B57C" access="ro" /> 
+	<register name="AES_HASH_DATA_IN_0" description="" address="0x4008B600" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_1" description="" address="0x4008B604" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_2" description="" address="0x4008B608" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_3" description="" address="0x4008B60C" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_4" description="" address="0x4008B610" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_5" description="" address="0x4008B614" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_6" description="" address="0x4008B618" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_7" description="" address="0x4008B61C" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_8" description="" address="0x4008B620" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_9" description="" address="0x4008B624" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_10" description="" address="0x4008B628" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_11" description="" address="0x4008B62C" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_12" description="" address="0x4008B630" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_13" description="" address="0x4008B634" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_14" description="" address="0x4008B638" access="wo" /> 
+	<register name="AES_HASH_DATA_IN_15" description="" address="0x4008B63C" access="wo" /> 
+	<register name="AES_HASH_IO_BUF_CTRL" description="" address="0x4008B640" access="rw" /> 
+	<register name="AES_HASH_MODE_IN" description="" address="0x4008B644" access="wo" /> 
+	<register name="AES_HASH_LENGTH_IN_L" description="" address="0x4008B648" access="wo" /> 
+	<register name="AES_HASH_LENGTH_IN_H" description="" address="0x4008B64C" access="wo" /> 
+	<register name="AES_HASH_DIGEST_A" description="" address="0x4008B650" access="rw" /> 
+	<register name="AES_HASH_DIGEST_B" description="" address="0x4008B654" access="rw" /> 
+	<register name="AES_HASH_DIGEST_C" description="" address="0x4008B658" access="rw" /> 
+	<register name="AES_HASH_DIGEST_D" description="" address="0x4008B65C" access="rw" /> 
+	<register name="AES_HASH_DIGEST_E" description="" address="0x4008B660" access="rw" /> 
+	<register name="AES_HASH_DIGEST_F" description="" address="0x4008B664" access="rw" /> 
+	<register name="AES_HASH_DIGEST_G" description="" address="0x4008B668" access="rw" /> 
+	<register name="AES_HASH_DIGEST_H" description="" address="0x4008B66C" access="rw" /> 
+	<register name="AES_CTRL_ALG_SEL" description="" address="0x4008B700" access="rw" /> 
+	<register name="AES_CTRL_PROT_EN" description="" address="0x4008B704" access="rw" /> 
+	<register name="AES_CTRL_SW_RESET" description="" address="0x4008B740" access="rw" /> 
+	<register name="AES_CTRL_INT_CFG" description="" address="0x4008B780" access="rw" /> 
+	<register name="AES_CTRL_INT_EN" description="" address="0x4008B784" access="rw" /> 
+	<register name="AES_CTRL_INT_CRL" description="" address="0x4008B788" access="wo" /> 
+	<register name="AES_CTRL_INT_SET" description="" address="0x4008B78C" access="wo" /> 
+	<register name="AES_CTRL_INT_STAT" description="" address="0x4008B790" access="ro" /> 
+	<register name="AES_CTRL_OPTIONS" description="" address="0x4008B7F8" access="ro" /> 
+	<register name="AES_CTRL_VERSION" description="" address="0x4008B7FC" access="ro" /> 
+	</registergroup>
+	</group>
+	
+	<group name="PKA" description="PKA Registers">
+	<registergroup name="PKA" description=""> 
+	<register name="PKA_APTR" description="" address="0x44004000" access="rw" /> 
+	<register name="PKA_BPTR" description="" address="0x44004004" access="rw" /> 
+	<register name="PKA_CPTR" description="" address="0x44004008" access="rw" /> 
+	<register name="PKA_DPTR" description="" address="0x4400400C" access="rw" /> 
+	<register name="PKA_ALENGTH" description="" address="0x44004010" access="rw" /> 
+	<register name="PKA_BLENGTH" description="" address="0x44004014" access="rw" /> 
+	<register name="PKA_SHIFT" description="" address="0x44004018" access="rw" /> 
+	<register name="PKA_FUNCTION" description="" address="0x4400401C" access="rw" /> 
+	<register name="PKA_COMPARE" description="" address="0x44004020" access="ro" /> 
+	<register name="PKA_MSW" description="" address="0x44004024" access="ro" /> 
+	<register name="PKA_DIVMSW" description="" address="0x44004028" access="ro" /> 
+	<register name="PKA_SEQ_CTRL" description="" address="0x440040C8" access="rw" /> 
+	<register name="PKA_OPTIONS" description="" address="0x440040F4" access="ro" /> 
+	<register name="PKA_SW_REV" description="" address="0x440040F8" access="ro" /> 
+	<register name="PKA_REVISION" description="" address="0x440040FC" access="ro" /> 
+	
+	</registergroup>
+	</group>
 </model>
