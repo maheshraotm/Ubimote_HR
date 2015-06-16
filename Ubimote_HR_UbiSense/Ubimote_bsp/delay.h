@@ -2,7 +2,7 @@
 #define __delay_h__
 
 
-void delay_msec(unsigned int delay);
+void delay_msec(unsigned int);
 
 
 
