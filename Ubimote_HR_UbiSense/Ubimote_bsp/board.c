@@ -31,7 +31,8 @@ void board_init(void)
 	    //
 	    SysCtrlIOClockSet(SYS_CTRL_SYSDIV_16MHZ);
 
-
+	    // The Timer3 peripheral must be enabled for use.
+	    SysCtrlPeripheralEnable(SYS_CTRL_PERIPH_GPT3);   
 
 	    //
 	    //  The I2C peripheral must be enabled before use.
