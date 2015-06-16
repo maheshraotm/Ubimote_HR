@@ -1,5 +1,5 @@
 
 
 void board_init(void);
-void Timer0BIntHandler(void);
+void Timer3AIntHandler(void);
 
