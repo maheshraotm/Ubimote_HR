@@ -44,6 +44,11 @@ void board_init(void)
 	    //
 	    SysCtrlPeripheralReset(SYS_CTRL_PERIPH_I2C);
 
+	    // Congifure Timer 3 with one shot 32 bit mode
+	    TimerConfigure(GPTIMER3_BASE, GPTIMER_CFG_ONE_SHOT );
+	    
+	    // Initialise the interrupt handler
+	    TimerIntRegister(GPTIMER3_BASE, GPTIMER_A, Timer3AIntHandler);  
 
 	    InitConsole();
 }
