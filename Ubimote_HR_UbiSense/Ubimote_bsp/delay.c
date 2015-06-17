@@ -1,6 +1,7 @@
+#include "delay.h"
+#include <stdinit.h>
 
-
-static unsigned int TimerInterrupt = 0;
+static bool TimerInterrupt = false;
 void Timer0BIntHandler(void)
 {
 
@@ -23,7 +24,7 @@ void Timer0BIntHandler(void)
 
 void delay_msec(unsigned int delay_time)
 {
- TimerInterrupt = 0;
+ TimerInterrupt = false;
 
  TimerLoadSet(GPTIMER3_BASE, GPTIMER_A, ((32000/20) * delay_time));
  
@@ -33,7 +34,7 @@ void delay_msec(unsigned int delay_time)
  TimerEnable(GPTIMER3_BASE, GPTIMER_A);
  while(TimerInterrupt != TIME_REACHED);
 
- TimerInterrupt = 0;
+ TimerInterrupt = false;
        
        
 }
