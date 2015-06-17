@@ -13,30 +13,21 @@
 #include <gpio.h>
 #include <ioc.h>
 
+#include "delay.h"
+
 
 int main(void)
 {
-   volatile uint32_t ui32LoopCount;
-    volatile uint32_t ui32LoopXV=0;
-  
+   	board_init();
 	GPIOPinTypeGPIOOutput(BSP_LED_BASE, BSP_LED_ALL);
 	GPIOPinWrite(BSP_LED_BASE, BSP_LED_ALL, 0xE0); /* initially in OFF state */
-
 	while(1)
 	    {
-
-	        // Delay for a bit
-			GPIOPinWrite(BSP_LED_BASE, BSP_LED_ALL, ~0xE0);
-	        for(ui32LoopCount = 200000; ui32LoopCount > 0; ui32LoopCount--)
-	        {
-	            ui32LoopXV++;
-	        }
-
+		// Delay for a bit
+		GPIOPinWrite(BSP_LED_BASE, BSP_LED_ALL, ~0xE0);
+	        delay_msec(1000);
 	        GPIOPinWrite(BSP_LED_BASE, BSP_LED_ALL, 0xE0);
-	        for(ui32LoopCount = 200000; ui32LoopCount > 0; ui32LoopCount--)
-	        {
-	        	ui32LoopXV++;
-	        }
+	        delay_msec(1000);
 	    }
 
 }
