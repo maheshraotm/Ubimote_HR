@@ -16,6 +16,8 @@
 #include "Ubimote_HR_bsp.h"
 #include "board.h"
 #include "Ubimote_uart.h"
+#include "delay.h"
+#include "gptimer.h"
 
 
 void board_init(void)
