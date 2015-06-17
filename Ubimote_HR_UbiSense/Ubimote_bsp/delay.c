@@ -1,12 +1,17 @@
+#include "delay.h"
+#include "gptimer.h"
+#include "hw_memmap.h"
+#include "interrupt.h"
+#include "hw_ints.h"
+#include <stdbool.h>
 
-
-static unsigned int TimerInterrupt = 0;
+static bool TimerInterrupt = false;
 void Timer0BIntHandler(void)
 {
 
  TimerIntClear(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
 
- TimerInterrupt = 1;
+ TimerInterrupt = true;
   
  IntDisable(INT_TIMER3A);
 
@@ -23,9 +28,9 @@ void Timer0BIntHandler(void)
 
 void delay_msec(unsigned int delay_time)
 {
- TimerInterrupt = 0;
+ TimerInterrupt = false;
 
- TimerLoadSet(GPTIMER3_BASE, GPTIMER_A, ((32000/20) * delay_time));
+ TimerLoadSet(GPTIMER3_BASE, GPTIMER_A, ((1600) * delay_time));
  
  IntMasterEnable();
  TimerIntEnable(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
@@ -33,7 +38,7 @@ void delay_msec(unsigned int delay_time)
  TimerEnable(GPTIMER3_BASE, GPTIMER_A);
  while(TimerInterrupt != TIME_REACHED);
 
- TimerInterrupt = 0;
+ TimerInterrupt = false;
        
        
 }
