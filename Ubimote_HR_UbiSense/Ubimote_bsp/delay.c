@@ -1,40 +1,40 @@
+#include "delay.h"
+#include "gptimer.h"
+#include "hw_memmap.h"
+#include "interrupt.h"
+#include "hw_ints.h"
+#include <stdbool.h>
 
-
-static unsigned int TimerInterrupt = 0;
-void Timer0BIntHandler(void)
+static bool TimerInterrupt = false;
+void Timer3AIntHandler(void)
 {
 
- TimerIntClear(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
+	TimerIntClear(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
 
- TimerInterrupt = 1;
-  
- IntDisable(INT_TIMER3A);
+	TimerInterrupt = true;
 
-        //
-        // Turn off Timer0B interrupt.
-        //
-    TimerIntDisable(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
+	IntDisable(INT_TIMER3A);
 
-        //
-        // Clear any pending interrupt flag.
-        //
-   TimerIntClear(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
+	//
+	// Turn off Timer3A interrupt.
+	//
+	TimerIntDisable(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
 }
 
 void delay_msec(unsigned int delay_time)
 {
- TimerInterrupt = 0;
+	TimerInterrupt = false;
 
- TimerLoadSet(GPTIMER3_BASE, GPTIMER_A, ((32000/20) * delay_time));
- 
- IntMasterEnable();
- TimerIntEnable(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
- IntEnable(INT_TIMER3A);
- TimerEnable(GPTIMER3_BASE, GPTIMER_A);
- while(TimerInterrupt != TIME_REACHED);
+	//Load the timer with delay
+	TimerLoadSet(GPTIMER3_BASE, GPTIMER_A, ((1600) * delay_time));
 
- TimerInterrupt = 0;
-       
-       
+	//TimerIntRegister(GPTIMER3_BASE, GPTIMER_A, Timer3AIntHandler);
+	IntMasterEnable();
+	TimerIntEnable(GPTIMER3_BASE, GPTIMER_TIMA_TIMEOUT);
+	IntEnable(INT_TIMER3A);
+	TimerEnable(GPTIMER3_BASE, GPTIMER_A);
+	while (TimerInterrupt != TIME_REACHED);
+
+	TimerInterrupt = false;
+
 }
-
